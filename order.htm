@@ -52,25 +52,28 @@
             font-weight:bold;
         }
 
-        input, textarea, select{
+        input, textarea{
             width:100%;
             padding:10px;
             margin-top:5px;
             box-sizing:border-box;
         }
 
-        .food{
+        .food-item{
+            margin-top:15px;
             display:flex;
+            justify-content:space-between;
+            align-items:center;
             gap:10px;
-            margin-top:10px;
         }
 
-        .food select{
+        .food-item label{
             flex:2;
         }
 
-        .food input{
+        .food-item input{
             flex:1;
+            padding:8px;
         }
 
         button{
@@ -81,10 +84,20 @@
             border:none;
             cursor:pointer;
             border-radius:5px;
+            width:100%;
         }
 
         button:hover{
             background:#e64a19;
+        }
+
+        .reset-btn{
+            background:#555;
+            margin-top:10px;
+        }
+
+        .reset-btn:hover{
+            background:#333;
         }
 
         footer{
@@ -117,13 +130,13 @@
 <form>
 
 <label>ชื่อ - นามสกุล</label>
-<input type="text" name="fullname" required>
+<input type="text" required>
 
 <label>เบอร์โทรศัพท์</label>
-<input type="tel" name="phone" required>
+<input type="tel" required>
 
 <label>ที่อยู่จัดส่ง</label>
-<textarea rows="4" required></textarea>
+<textarea rows="3" required></textarea>
 
 <label>วันจัดส่ง</label>
 <input type="date" required>
@@ -131,47 +144,52 @@
 <label>เวลาจัดส่ง</label>
 <input type="time" required>
 
-<h3>เลือกรายการอาหาร</h3>
+<hr>
 
-<div class="food">
-    <select>
-        <option>ข้าวผัดทะเล</option>
-        <option>ผัดกะเพราเนื้อ</option>
-        <option>สเต๊กหมู</option>
-        <option>เฟรนช์ฟรายส์</option>
-        <option>ฮันนี่โทสต์</option>
-        <option>บิงซู</option>
-    </select>
+<h2>รายการอาหาร</h2>
 
-    <input type="number" min="1" value="1" placeholder="จำนวน">
+<div class="food-item">
+    <label>ข้าวผัดทะเล (120 บาท)</label>
+    <input type="number" min="0" value="0">
 </div>
-<label>คำสั่งพิเศษ</label>
-<textarea rows="4" required></textarea>
-<div class="food">
-    <select>
-        <option>ข้าวผัดทะเล</option>
-        <option>ผัดกะเพราเนื้อ</option>
-        <option>สเต๊กหมู</option>
-        <option>เฟรนช์ฟรายส์</option>
-        <option>ฮันนี่โทสต์</option>
-        <option>บิงซู</option>
-    </select>
 
-    <input type="number" min="1" value="1" placeholder="จำนวน">
+<div class="food-item">
+    <label>ผัดกะเพราเนื้อ (95 บาท)</label>
+    <input type="number" min="0" value="0">
 </div>
+
+<div class="food-item">
+    <label>สเต๊กหมู (159 บาท)</label>
+    <input type="number" min="0" value="0">
+</div>
+
+<div class="food-item">
+    <label>เฟรนช์ฟรายส์ (69 บาท)</label>
+    <input type="number" min="0" value="0">
+</div>
+
+<div class="food-item">
+    <label>ฮันนี่โทสต์ (149 บาท)</label>
+    <input type="number" min="0" value="0">
+</div>
+
+<div class="food-item">
+    <label>บิงซู (149 บาท)</label>
+    <input type="number" min="0" value="0">
+</div>
+
 <label>คำสั่งพิเศษ</label>
-<textarea rows="4" required></textarea>
-<br>
+<textarea rows="3"></textarea>
 
 <button type="submit">ยืนยันการสั่งอาหาร</button>
-<button type="reset">ล้างข้อมูล</button>
+<button type="reset" class="reset-btn">ล้างข้อมูล</button>
 
 </form>
 
 </div>
 
 <footer>
-    <p>Test คาเฟ่ & ร้านอาหาร  2026</p>
+    <p>Test คาเฟ่ & ร้านอาหาร 2026</p>
 </footer>
 
 </body>
