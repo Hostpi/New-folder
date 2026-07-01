@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Test คาเฟ่ & ร้านอาหาร</title>
+
+    <meta name="description" content="บ้านอิ่มสุข คาเฟ่ & ร้านอาหาร ให้บริการอาหารไทย ของหวาน และเครื่องดื่ม บรรยากาศอบอุ่น เหมาะสำหรับครอบครัวและเพื่อนฝูง">
+    <meta name="keywords" content="ร้านอาหาร, อาหารไทย, คาเฟ่, ของหวาน, เครื่องดื่ม, บ้านอิ่มสุข">
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin:0;
+            background:#f8f8f8;
+        }
+
+        header{
+            background:#ff7043;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+
+        nav{
+            background:#333;
+            text-align:center;
+            padding:12px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:0 20px;
+            font-weight:bold;
+        }
+
+        section{
+            width:90%;
+            margin:auto;
+            padding:20px;
+        }
+
+        .gallery{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+            gap:15px;
+        }
+
+        .gallery img{
+            width:100%;
+            height:180px;
+            object-fit:cover;
+            border-radius:10px;
+            transition:0.3s;
+        }
+
+        .gallery img:hover{
+            transform:scale(1.05);
+        }
+
+        table{
+            width:100%;
+            border-collapse:collapse;
+            background:white;
+        }
+
+        th{
+            background:#ff7043;
+            color:white;
+        }
+
+        th,td{
+            border:1px solid #ccc;
+            padding:12px;
+            text-align:left;
+        }
+
+        footer{
+            background:#333;
+            color:white;
+            text-align:center;
+            padding:15px;
+            margin-top:20px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Test คาเฟ่ & ร้านอาหาร</h1>
+    <p>อร่อย สดใหม่ บรรยากาศอบอุ่น เหมาะสำหรับทุกคนในครอบครัว</p>
+</header>
+
+<nav>
+    <a href="index.htm">หน้าแรก</a>
+    <a href="menu.htm">เมนูอาหาร</a>
+    <a href="order.htm">สั่งอาหาร</a>
+</nav>
+
+<section>
+
+    <h2>เกี่ยวกับร้าน</h2>
+
+    <p>
+        Test คาเฟ่ & ร้านอาหาร ให้บริการอาหารไทย เครื่องดื่ม และของหวาน
+        ด้วยวัตถุดิบคุณภาพ บรรยากาศร่มรื่น มีมุมถ่ายรูปสวย เหมาะสำหรับการรับประทานอาหาร
+        กับครอบครัว เพื่อน และคนพิเศษ
+    </p>
+
+</section>
+
+<section>
+
+    <h2>บรรยากาศร้านและอาหาร</h2>
+
+    <div class="gallery">
+
+        <a href="menu.htm">
+            <img src="images/img1.jpg" alt="บรรยากาศร้าน">
+        </a>
+
+        <a href="menu.htm">
+            <img src="images/img2.jpg" alt="อาหารไทย">
+        </a>
+
+        <a href="menu.htm">
+            <img src="images/img3.jpg" alt="เครื่องดื่ม">
+        </a>
+
+        <a href="menu.htm">
+            <img src="images/img4.jpg" alt="ของหวาน">
+        </a>
+
+        <a href="menu.htm">
+            <img src="images/img5.jpg" alt="เมนูแนะนำ">
+        </a>
+
+        <a href="menu.htm">
+            <img src="images/img6.jpg" alt="บรรยากาศคาเฟ่">
+        </a>
+
+    </div>
+
+</section>
+
+<section>
+
+    <h2>เมนูแนะนำ</h2>
+
+    <table>
+
+        <tr>
+            <th>หมวดอาหาร</th>
+            <th>เมนูแนะนำ</th>
+        </tr>
+
+        <tr>
+            <td>ของทานเล่น</td>
+            <td>เฟรนช์ฟรายส์, นักเก็ตไก่, ปีกไก่ทอด</td>
+        </tr>
+
+        <tr>
+            <td>จานหลัก</td>
+            <td>ข้าวผัดทะเล, สเต๊กหมู, ผัดกะเพราเนื้อ</td>
+        </tr>
+
+        <tr>
+            <td>ของหวาน</td>
+            <td>ฮันนี่โทสต์, บิงซู, เค้กช็อกโกแลต</td>
+        </tr>
+
+    </table>
+
+</section>
+
+<section align="center">
+
+    <h2>เมนูเพิ่มเติม</h2>
+
+    <p>
+        <a href="menu.htm">ดูเมนูทั้งหมด</a>
+        |
+        <a href="order.htm">สั่งอาหารออนไลน์</a>
+    </p>
+
+</section>
+
+<footer>
+
+    <p>
+        Test คาเฟ่ & ร้านอาหาร © 2026
+    </p>
+
+</footer>
+
+</body>
+</html>

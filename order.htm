@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สั่งอาหาร - Test คาเฟ่ & ร้านอาหาร</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background:#f5f5f5;
+            margin:0;
+        }
+
+        header{
+            background:#ff7043;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+
+        nav{
+            background:#333;
+            text-align:center;
+            padding:12px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:0 15px;
+            font-weight:bold;
+        }
+
+        .container{
+            width:80%;
+            max-width:700px;
+            margin:30px auto;
+            background:white;
+            padding:25px;
+            border-radius:10px;
+            box-shadow:0 0 10px rgba(0,0,0,0.2);
+        }
+
+        h2{
+            text-align:center;
+        }
+
+        label{
+            display:block;
+            margin-top:15px;
+            font-weight:bold;
+        }
+
+        input, textarea, select{
+            width:100%;
+            padding:10px;
+            margin-top:5px;
+            box-sizing:border-box;
+        }
+
+        .food{
+            display:flex;
+            gap:10px;
+            margin-top:10px;
+        }
+
+        .food select{
+            flex:2;
+        }
+
+        .food input{
+            flex:1;
+        }
+
+        button{
+            margin-top:20px;
+            padding:10px 20px;
+            background:#ff7043;
+            color:white;
+            border:none;
+            cursor:pointer;
+            border-radius:5px;
+        }
+
+        button:hover{
+            background:#e64a19;
+        }
+
+        footer{
+            background:#333;
+            color:white;
+            text-align:center;
+            padding:15px;
+            margin-top:20px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>แบบฟอร์มสั่งอาหาร</h1>
+</header>
+
+<nav>
+    <a href="index.htm">หน้าแรก</a>
+    <a href="menu.htm">เมนูอาหาร</a>
+    <a href="order.htm">สั่งอาหาร</a>
+</nav>
+
+<div class="container">
+
+<h2>กรอกข้อมูลการสั่งอาหาร</h2>
+
+<form>
+
+<label>ชื่อ - นามสกุล</label>
+<input type="text" name="fullname" required>
+
+<label>เบอร์โทรศัพท์</label>
+<input type="tel" name="phone" required>
+
+<label>ที่อยู่จัดส่ง</label>
+<textarea rows="4" required></textarea>
+
+<label>วันจัดส่ง</label>
+<input type="date" required>
+
+<label>เวลาจัดส่ง</label>
+<input type="time" required>
+
+<h3>เลือกรายการอาหาร</h3>
+
+<div class="food">
+    <select>
+        <option>ข้าวผัดทะเล</option>
+        <option>ผัดกะเพราเนื้อ</option>
+        <option>สเต๊กหมู</option>
+        <option>เฟรนช์ฟรายส์</option>
+        <option>ฮันนี่โทสต์</option>
+        <option>บิงซู</option>
+    </select>
+
+    <input type="number" min="1" value="1" placeholder="จำนวน">
+</div>
+
+<div class="food">
+    <select>
+        <option>ข้าวผัดทะเล</option>
+        <option>ผัดกะเพราเนื้อ</option>
+        <option>สเต๊กหมู</option>
+        <option>เฟรนช์ฟรายส์</option>
+        <option>ฮันนี่โทสต์</option>
+        <option>บิงซู</option>
+    </select>
+
+    <input type="number" min="1" value="1" placeholder="จำนวน">
+</div>
+
+<br>
+
+<button type="submit">ยืนยันการสั่งอาหาร</button>
+<button type="reset">ล้างข้อมูล</button>
+
+</form>
+
+</div>
+
+<footer>
+    <p>Test คาเฟ่ & ร้านอาหาร © 2026</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เมนูอาหาร - Test คาเฟ่ & ร้านอาหาร</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin:0;
+            background:#f5f5f5;
+        }
+
+        header{
+            background:#ff7043;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+
+        nav{
+            background:#333;
+            text-align:center;
+            padding:12px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:0 15px;
+            font-weight:bold;
+        }
+
+        .container{
+            display:flex;
+            flex-wrap:wrap;
+            justify-content:center;
+            gap:20px;
+            padding:20px;
+        }
+
+        .menu{
+            width:250px;
+            background:white;
+            border-radius:10px;
+            box-shadow:0 0 8px rgba(0,0,0,0.2);
+            text-align:center;
+            padding:15px;
+        }
+
+        .menu img{
+            width:100%;
+            height:180px;
+            object-fit:cover;
+            border-radius:8px;
+        }
+
+        .price{
+            color:red;
+            font-size:20px;
+            font-weight:bold;
+        }
+
+        footer{
+            background:#333;
+            color:white;
+            text-align:center;
+            padding:15px;
+            margin-top:20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>เมนูอาหาร</h1>
+</header>
+
+<nav>
+    <a href="index.htm">หน้าแรก</a>
+    <a href="menu.htm">เมนูอาหาร</a>
+    <a href="order.htm">สั่งอาหาร</a>
+</nav>
+
+<div class="container">
+
+    <div class="menu">
+        <img src="images/img5.jpg" alt="ข้าวผัดทะเล">
+        <h3>ข้าวผัดทะเล</h3>
+        <p>ข้าวผัดหอม ๆ พร้อมกุ้ง ปลาหมึก และหมึกสด</p>
+        <p class="price">120 บาท</p>
+    </div>
+
+    <div class="menu">
+        <img src="images/menu2.jpg" alt="ผัดกะเพราเนื้อ">
+        <h3>ผัดกะเพราเนื้อ</h3>
+        <p>เนื้อผัดกะเพรารสจัด เสิร์ฟพร้อมไข่ดาว</p>
+        <p class="price">95 บาท</p>
+    </div>
+
+    <div class="menu">
+        <img src="images/menu3.jpg" alt="สเต๊กหมู">
+        <h3>สเต๊กหมู</h3>
+        <p>สเต๊กหมูนุ่ม เสิร์ฟพร้อมสลัดและเฟรนช์ฟรายส์</p>
+        <p class="price">159 บาท</p>
+    </div>
+
+    <div class="menu">
+        <img src="images/menu4.jpg" alt="เฟรนช์ฟรายส์">
+        <h3>เฟรนช์ฟรายส์</h3>
+        <p>มันฝรั่งทอดกรอบ เสิร์ฟพร้อมซอสมะเขือเทศ</p>
+        <p class="price">69 บาท</p>
+    </div>
+
+    <div class="menu">
+        <img src="images/menu5.jpg" alt="ฮันนี่โทสต์">
+        <h3>ฮันนี่โทสต์</h3>
+        <p>ขนมปังอบกรอบ ราดน้ำผึ้ง พร้อมไอศกรีม</p>
+        <p class="price">149 บาท</p>
+    </div>
+
+    <div class="menu">
+        <img src="images/menu6.jpg" alt="บิงซู">
+        <h3>บิงซู</h3>
+        <p>น้ำแข็งไสเกาหลี ราดซอสผลไม้และผลไม้สด</p>
+        <p class="price">139 บาท</p>
+    </div>
+
+</div>
+
+<footer>
+    <p>Test คาเฟ่ & ร้านอาหาร © 2026</p>
+</footer>
+
+</body>
+</html>
